@@ -15,3 +15,7 @@ jobs:
       - name: Build Docker image
         run: docker build -t devops-app .
 
+- name: Run tests
+      run: |
+        pip install pytest
+        pytest test_app.py
